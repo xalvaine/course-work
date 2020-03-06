@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700&display=swap&subset=cyrillic"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <nav class="header__navigation">
+        <ul class="header__list">
+            <li>
+                <a href="index.html" class="header__navigation-link">
+                    Главная
+                </a>
+            </li>
+            <li>
+                <a href="theory.html" class="header__navigation-link">
+                    Теория
+                </a>
+            </li>
+            <li>
+                <a href="poll.html" class="header__navigation-link">
+                    Опрос
+                </a>
+            </li>
+            <li>
+                <a href="map.html" class="header__navigation-link">
+                    Карта
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header__burger">
+        <span class="header__burger-stick header__burger-stick--1"></span>
+        <span class="header__burger-stick header__burger-stick--2"></span>
+        <span class="header__burger-stick header__burger-stick--3"></span>
+    </div>
+    <a href="compare.html" class="header__middle-link">&</a>
+    <a href="links.html" class="header__bottom-link">Ссылки</a>
+</header>
+<main class="main">
+    <section class="poll container">
+        <h2 class="poll__title">
+            Опрос посетителей сайта
+        </h2>
+        <form class="poll__form">
+            <div class="poll__pattern">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" placeholder="Тимофей">
+            </div>
+            <div class="poll__pattern">
+                <label for="dateOfBirth">Ваша дата рождения</label>
+                <input type="date" id="dateOfBirth">
+            </div>
+            <div class="poll__pattern">
+                <label for="aboutMe">Расскажите о себе</label>
+                <textarea rows="5" id="aboutMe" placeholder="Мне 20 лет"></textarea>
+            </div>
+            <div class="poll__pattern">
+                <label>Узнали ли вы что-то новое?</label>
+                <div class="poll__wrapper">
+                    <div class="poll__radio">
+                        <input type="radio" id="yes" name="radio">
+                        <label for="yes">Да</label>
+                    </div>
+                    <div class="poll__radio">
+                        <input type="radio" id="no" name="radio">
+                        <label for="no">Нет</label>
+                    </div>
+                </div>
+            </div>
+            <div class="poll__pattern">
+                <label>Какие ваши устройства используют Wi-Fi?</label>
+                <div class="poll__wrapper poll__wrapper--checkboxes">
+                    <div class="poll__checkboxes">
+                        <input type="checkbox" id="Python" name="checkbox">
+                        <label for="Python">Телефон</label>
+                    </div>
+                    <div class="poll__checkboxes">
+                        <input type="checkbox" id="Pascal" name="checkbox">
+                        <label for="Pascal">Ноутбук</label>
+                    </div>
+                    <div class="poll__checkboxes">
+                        <input type="checkbox" id="JavaScript" name="checkbox">
+                        <label for="JavaScript">Компьютер</label>
+                    </div>
+                    <div class="poll__checkboxes">
+                        <input type="checkbox" id="Java" name="checkbox">
+                        <label for="Java">Телевизор</label>
+                    </div>
+                    <div class="poll__checkboxes">
+                        <input type="checkbox" id="Ruby" name="checkbox">
+                        <label for="Ruby">Планшет</label>
+                    </div>
+                    <div class="poll__checkboxes">
+                        <input type="checkbox" id="C++" name="checkbox">
+                        <label for="C++">Принтер</label>
+                    </div>
+                </div>
+            </div>
+            <div class="poll__pattern">
+                <label for="frequency">Как часто вы заходите на подобные сайты?</label>
+                <select class="poll__select" id="frequency">
+                    <option>Никогда</option>
+                    <option>Редко</option>
+                    <option>Иногда</option>
+                    <option>Часто</option>
+                    <option>Постоянно</option>
+                </select>
+            </div>
+            <div class="poll__pattern">
+                <label for="rating">Оцените данный сайт по 10-балльной шкале</label>
+                <select class="poll__select poll__select--multiply" id="rating" multiple="">
+                    <option>2</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="poll__pattern">
+                <label>Вы ответили на все вопросы?</label>
+                <div class="poll__wrapper">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
+<script src="js/menu.js"></script>
+</body>
+</html>
